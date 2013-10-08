@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
+<!-- 
+Algoritma Program
+ 1. Mulai
+ 2. Masukkan Username dan Password pada form login
+ 3. Tekan tombol Login untuk men-submit form
+ 4. Akan muncul validasi login sesuai dengan yang diinputkan
+ 5. Selesai
+-->
 	<head>
 		<title>Tugas Praktikum</title>
-		
+		<!-- tag style digunakan untuk mempercantik tampilan halaman -->
 		<style>
 			body{
 				background-color: #c9e6f8;
@@ -32,6 +40,7 @@
 		</style>
 	</head>
 	<body>
+    	<!-- syntaq php dibawah digunakan untuk validasi login -->
 		<?php 
 			if(isset($_POST['user'])&&isset($_POST['pass'])){
 				if($_POST['user']=='user'&&$_POST['pass']=='user'){
@@ -64,6 +73,7 @@
 				</div>
 			</div>
 		</form>
+        <!-- tag script dibawah digunakan untuk validasi inputan dimana bila input masih kosong dan input harus berupa huruf -->
 		<script>
 			function validateForm(){
 				var x=document.forms["flogin"]["user"].value;
